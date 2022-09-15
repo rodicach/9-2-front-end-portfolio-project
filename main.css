@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
+
+@media (min-width: 768px) {
+	.container {
+		color: #4b0082;   
+	}
+}
+
+body {
+	background: url('assets/jene-stephaniuk.jpg');
+	/* min-height: 100vh;
+    text-align: center;
+    /* padding: 100px; */
+	/* font-family: 'Special Elite'; */
+	background-size: cover;
+}
+
+.menu_bar {
+	background-color: black;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+
+.logo {
+	color: #ffd700;
+	font-size: 37px;
+}
+
+.logo span {
+	color: #ff8c00;
+}
+
+.menu_bar ul {
+	list-style: none;
+	display: flex;
+}
+
+.menu_bar ul li {
+	padding: 10px 30px;
+}
+/* From uiverse.io by @kirzin */
+.menu_bar ul li a {
+	/* color: white;
+    text-decoration: none;
+    font-size: 25px; */
+
+	text-decoration: none;
+	position: sticky;
+	border: none;
+	font-size: 24px;
+	font-family: inherit;
+	color: #fff;
+	width: 9em;
+	height: 3em;
+	line-height: 2em;
+	text-align: center;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 300%;
+	border-radius: 30px;
+	/* z-index: 1; */
+}
+
+.menu_bar ul li a:hover {
+	/* color: #1e90ff;
+    text-decoration: underline; */
+
+	animation: ani 8s linear infinite;
+	border: none;
+}
+
+@keyframes ani {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 400%;
+	}
+}
+
+.menu_bar ul li a:before {
+	content: '';
+	position: absolute;
+	/* top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px; */
+	z-index: -1;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 35px;
+	transition: 1s;
+    /* box-sizing: border-box; */
+}
+
+.menu_bar ul li a:before {
+	filter: blur(20px);
+}
+
+.menu_bar ul li a:active {
+	background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+.container {
+	background-color: blanchedalmond;
+	width: 70%;
+	padding: 30px;
+	min-height: 60%;
+	border: 3px solid;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	margin: 16px auto;
+	margin-top: 15%;
+	font-family: 'Patrick Hand';
+	/* font-family: 'Special Elite'; */
+}
+
+.quote-text {
+	min-height: 10px;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.container h1 {
+	font-size: 33px;
+	text-align: left;
+	font-style: italic;
+}
+
+.container p {
+	text-transform: capitalize;
+	color: brown;
+	text-align: right;
+	font-style: italic;
+	font-size: 33px;
+}
+
+#btn {
+	font-size: 28px;
+	padding: 10px 20px;
+	background-color: #e6e6fa;
+	color: #0000ff;
+	text-transform: uppercase;
+	font-family: 'Patrick Hand';
+	margin: 0 auto;
+    border-radius: 35px;
+}
+
+#btn:hover {
+	color: dodgerblue;
+	background-color: gold;
+}
+
+/* .link-text {
+    color: blueviolet;
+    bottom: -500px;
+} */
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+} */

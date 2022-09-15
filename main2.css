@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
+
+@media (min-width: 768px) {
+	.container {
+		color: #4b0082;   
+	}
+}
+
+body {
+	display: grid;
+   grid-template-rows: 25% 75%; 
+   grid-template-columns: 25% 75%;
+   
+   padding-left: 3%;
+   padding-right: 3%;
+   background: url('assets/steve-johnson.jpg');
+   background-size: cover;
+}
+
+.heading {
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+}
+	
+.dropdown-list {
+	display: grid;
+	
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	border-right: 2px solid black;
+}
