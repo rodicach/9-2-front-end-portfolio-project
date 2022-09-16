@@ -26,7 +26,7 @@ body {
 	text-align: center;
 }
 	
-.dropdown-list {
+.dropdownList {
 	display: grid;
 	
 	grid-row-start: 3;
