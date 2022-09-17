@@ -62,6 +62,7 @@ body {
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	background-size: 300%;
 	border-radius: 30px;
+	padding: 10px;
 	/* z-index: 1; */
 }
 

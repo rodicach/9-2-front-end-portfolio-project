@@ -1,37 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
 
 @media (min-width: 768px) {
-	.container {
-		color: #4b0082;   
+	main {
+		/* grid-template-columns: 12em 1fr;
+		grid-template-rows: auto 1fr;   */
+		color: #ff00ff;
+		
 	}
 }
 
-body {
+main {
 	display: grid;
-   grid-template-rows: 25% 75%; 
-   grid-template-columns: 25% 75%;
+	grid-template-columns: 25% 75%;
+	
+}
+
+hr {
+	border-color: #4682b4;
+	border-width: 1px;
+	/* border-bottom: 10px; */
+}
+body {
+	/* display: grid; */
+    grid-template-columns: 25% 75%;
    
    padding-left: 3%;
    padding-right: 3%;
    background: url('assets/steve-johnson.jpg');
    background-size: cover;
+   /* grid-gap: 1em;  */
 }
 
-.heading {
+header {
 	display: grid;
 	grid-row-start: 1;
 	grid-row-end: 1;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	text-align: center;
+	font-size: 16px;
+	
+	/* grid-template-columns: 100%;
+	grid-column: span 1; */
+	
 }
 	
 .dropdownList {
-	display: grid;
-	
-	grid-row-start: 3;
-	grid-row-end: 4;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	border-right: 2px solid black;
+		
+	width: 100%;
+	padding: 8px 12px;
+	background-color: #eee8aa;
+	color: #ff4500;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+	/* grid-column: span 2; */
+}
+
+.button {
+	max-width: 100%;
+	padding: 8px 12px;
+	background-color: #87ceeb;
+	color: #ff4500;
+	border: 1px solid #2f4f4f;
+	border-radius: 10px;
+	}
+
+.background {
+	background-color: #dddddd;
+
 }
