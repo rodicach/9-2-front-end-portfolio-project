@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Forum&family=Macondo&family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
 
 @media (min-width: 768px) {
 	main {
-		/* grid-template-columns: 12em 1fr;
-		grid-template-rows: auto 1fr;   */
-		color: #ff00ff;
+		color: #8b4513;
+		
 		
 	}
 }
 
 main {
 	display: grid;
-	grid-template-columns: 25% 75%;
-	
+	grid-template-columns: 25% 75%;	
 }
 
 hr {
@@ -21,14 +19,11 @@ hr {
 	/* border-bottom: 10px; */
 }
 body {
-	/* display: grid; */
-    grid-template-columns: 25% 75%;
-   
+   grid-template-columns: 25% 75%;   
    padding-left: 3%;
    padding-right: 3%;
    background: url('assets/steve-johnson.jpg');
    background-size: cover;
-   /* grid-gap: 1em;  */
 }
 
 header {
@@ -38,15 +33,12 @@ header {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	text-align: center;
-	font-size: 16px;
-	
-	/* grid-template-columns: 100%;
-	grid-column: span 1; */
+	font-size: 20px;
+	color: #191970;
 	
 }
 	
-.dropdownList {
-		
+.dropdownList {		
 	width: 100%;
 	padding: 8px 12px;
 	background-color: #eee8aa;
@@ -66,6 +58,12 @@ header {
 	}
 
 .background {
-	background-color: #dddddd;
+	margin-left: 15px;
+	background-color: #f4a460;
+	border-radius: 10px;
+	padding: 2%;
+	font-size: 25px;
+	font-family: Forum;
+	line-height: 30px;
 
 }

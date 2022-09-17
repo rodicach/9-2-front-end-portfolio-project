@@ -3,20 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rampart+One&family=Special+Elite&display=swap');
 
 @media (min-width: 768px) {
-	.container {
+	.container h1 {
 		color: #4b0082;   
 	}
+	.container p {
+		color: #cd5c5c;
+	}
+
 }
 
 body {
 	background: url('assets/jene-stephaniuk.jpg');
-	/* min-height: 100vh;
-    text-align: center;
-    /* padding: 100px; */
-	/* font-family: 'Special Elite'; */
 	background-size: cover;
 }
-
+/* Specific to the menu bar */
 .menu_bar {
 	background-color: black;
 	height: 80px;
@@ -43,12 +43,9 @@ body {
 .menu_bar ul li {
 	padding: 10px 30px;
 }
+
 /* From uiverse.io by @kirzin */
 .menu_bar ul li a {
-	/* color: white;
-    text-decoration: none;
-    font-size: 25px; */
-
 	text-decoration: none;
 	position: sticky;
 	border: none;
@@ -63,13 +60,10 @@ body {
 	background-size: 300%;
 	border-radius: 30px;
 	padding: 10px;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 .menu_bar ul li a:hover {
-	/* color: #1e90ff;
-    text-decoration: underline; */
-
 	animation: ani 8s linear infinite;
 	border: none;
 }
@@ -86,16 +80,16 @@ body {
 .menu_bar ul li a:before {
 	content: '';
 	position: absolute;
-	/* top: -5px;
+	top: -5px;
     left: -5px;
     right: -5px;
-    bottom: -5px; */
+    bottom: -5px;
 	z-index: -1;
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	background-size: 400%;
 	border-radius: 35px;
 	transition: 1s;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .menu_bar ul li a:before {
@@ -105,19 +99,46 @@ body {
 .menu_bar ul li a:active {
 	background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
+/* End of menu bar codes */
+
+/* Quotes container */
 .container {
-	background-color: blanchedalmond;
+	/* background-color: blanchedalmond; */
+	/* box-sizing: border-box; */
+	
 	width: 70%;
 	padding: 30px;
 	min-height: 60%;
 	border: 3px solid;
 	background-position: center;
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	margin: 16px auto;
 	margin-top: 15%;
 	font-family: 'Patrick Hand';
 	/* font-family: 'Special Elite'; */
+	animation: container 10s ease infinite;	
+}
+/* Quote box background color change */
+@keyframes container {
+	0% {
+		background-color: #fff8dc;
+	}
+	20% {
+		background-color: #ffc0cb;
+	}
+	40% {
+		background-color: #b0e0e6;
+	}
+	60% {
+		background-color: #d88fe8;
+	}
+	80% {
+		background-color: #85bc8f;
+	}
+	100% {
+		background-color: #f4a460;
+	}
 }
 
 .quote-text {
@@ -126,15 +147,16 @@ body {
 	text-align: center;
 }
 
+/** Quote text */
 .container h1 {
 	font-size: 33px;
 	text-align: left;
 	font-style: italic;
 }
 
+/** Author text */
 .container p {
 	text-transform: capitalize;
-	color: brown;
 	text-align: right;
 	font-style: italic;
 	font-size: 33px;
@@ -155,15 +177,3 @@ body {
 	color: dodgerblue;
 	background-color: gold;
 }
-
-/* .link-text {
-    color: blueviolet;
-    bottom: -500px;
-} */
-
-/* footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; 
-} */
